@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CarePulse
 
-## Getting Started
+CarePulse is a comprehensive healthcare management system designed to streamline the process of booking doctor appointments and managing related administrative tasks. This system provides a user-friendly interface for patients and administrators, real-time notifications, and a robust admin panel for effective healthcare management.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Patient Portal
+- **User Authentication:** Secure login and registration.
+- **Profile Management:** Input personal information, medical history, and identification details.
+- **Appointment Booking:** Schedule doctor appointments with ease.
+- **Confirmation Screen:** View appointment details before finalizing.
+
+### Notifications
+- **Real-Time SMS Alerts:** Receive timely updates and reminders for appointments.
+
+### Admin Panel
+- **Appointment Management:** Schedule, update, and cancel appointments.
+- **User Permissions:** Grant or restrict admin access.
+- **SMS Confirmations:** Notify patients about appointment status.
+
+## Technology Stack
+
+### Front-End
+- **Next.js**: Server-side rendering and nested layouts for optimized performance.
+- **TypeScript**: Ensures type safety and enhances developer productivity.
+- **TailwindCSS**: Provides modern, responsive design with ease.
+- **React Hook Form**: Simplifies form handling and validation.
+- **Shadcn**: For reusable and accessible components.
+
+### Back-End
+- **Appwrite**: Handles backend services, including authentication and database.
+- **Twilio**: Facilitates real-time SMS notifications.
+
+### Monitoring and Analysis
+- **Sentry**: Tracks performance issues and monitors application health.
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MatrimPathak/CarePulse.git
+   cd CarePulse
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Configure environment variables:
+   - Create a `.env` file in the root directory.
+   - Add the required credentials for Appwrite, Twilio, and other services.
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+## Folder Structure
+
+```plaintext
+CarePulse/
+├── public/           # Static assets
+├── src/
+│   ├── components/   # Reusable components
+│   ├── pages/        # Application pages
+│   ├── services/     # API and backend service integrations
+│   ├── styles/       # Global styles
+│   ├── utils/        # Utility functions
+│   └── hooks/        # Custom hooks
+├── package.json      # Project dependencies and scripts
+└── README.md         # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributions are welcome! If you'd like to contribute:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m "Add feature"`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a pull request.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
+This project is licensed under the [MIT License](LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
+## Acknowledgments
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Appwrite](https://appwrite.io/) for backend services.
+- [Twilio](https://www.twilio.com/) for SMS notifications.
+- [Sentry](https://sentry.io/) for performance monitoring.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For any questions or support, feel free to reach out via the repository's [Issues](https://github.com/MatrimPathak/CarePulse/issues) section.
